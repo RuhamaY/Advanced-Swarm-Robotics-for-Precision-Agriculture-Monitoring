@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/control_coordination/control_coordination.egg-info/PKG-INFO
+../../build/control_coordination/control_coordination.egg-info/SOURCES.txt
+../../build/control_coordination/control_coordination.egg-info/dependency_links.txt
+../../build/control_coordination/control_coordination.egg-info/entry_points.txt
+../../build/control_coordination/control_coordination.egg-info/requires.txt
+../../build/control_coordination/control_coordination.egg-info/top_level.txt
+../../build/control_coordination/control_coordination.egg-info/zip-safe
+control_coordination/__init__.py
+control_coordination/control_coordination.py
+launch/general_launch.py
+resource/control_coordination
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

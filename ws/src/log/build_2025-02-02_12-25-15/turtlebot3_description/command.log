@@ -1,0 +1,1 @@
+Invoking command in '/home/ros/ws/src/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_description -DCMAKE_INSTALL_PREFIX=/home/ros/ws/src/install/turtlebot3_description

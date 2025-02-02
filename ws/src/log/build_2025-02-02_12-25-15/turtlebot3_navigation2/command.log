@@ -1,0 +1,6 @@
+Invoking command in '/home/ros/ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ros/ws/src/install/turtlebot3_navigation2
+Invoked command in '/home/ros/ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ros/ws/src/install/turtlebot3_navigation2
+Invoking command in '/home/ros/ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/ws/src/build/turtlebot3_navigation2 -- -j8 -l8
+Invoked command in '/home/ros/ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/ws/src/build/turtlebot3_navigation2 -- -j8 -l8
+Invoking command in '/home/ros/ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/ws/src/build/turtlebot3_navigation2
+Invoked command in '/home/ros/ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/ws/src/build/turtlebot3_navigation2

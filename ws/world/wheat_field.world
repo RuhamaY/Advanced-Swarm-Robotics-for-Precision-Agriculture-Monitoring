@@ -1,0 +1,1646 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <!-- Lighting -->
+    <light name="sun" type="directional">
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.9 0.9 0.9 1</specular>
+      <attenuation>
+        <range>100</range>
+        <constant>0.9</constant>
+        <linear>0.07</linear>
+        <quadratic>0.017</quadratic>
+      </attenuation>
+      <direction>-1 -1 -1</direction>
+    </light>
+
+    <!-- Ground Plane -->
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grass</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='maize_field'>
+      <model name='maize_plant_0_0'>
+        <pose>0 0 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius> <!-- Thickness of the stalk -->
+                <length>1.0</length> <!-- Height of the stalk -->
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse> <!-- Green color for the stalk -->
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose> <!-- Position and orientation of the leaf -->
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size> <!-- Size of the leaf -->
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name> <!-- Base green color -->
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose> <!-- Position of the rust patch -->
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size> <!-- Size of the rust patch -->
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse> <!-- Red color for rust -->
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+      <!-- Maize Plant 1 -->
+      <model name='maize_plant_0_0'>
+        <pose>0 1 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius> <!-- Thickness of the stalk -->
+                <length>1.0</length> <!-- Height of the stalk -->
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse> <!-- Green color for the stalk -->
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose> <!-- Position and orientation of the leaf -->
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size> <!-- Size of the leaf -->
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name> <!-- Base green color -->
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose> <!-- Position of the rust patch -->
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size> <!-- Size of the rust patch -->
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse> <!-- Red color for rust -->
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+
+
+<!-- Maize Plant 2 -->
+      <model name='maize_plant_0_1'>
+        <pose>0 2 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+      <!-- Maize Plant 1 -->
+      <model name='maize_plant_0_2'>
+        <pose>0 3 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius> <!-- Thickness of the stalk -->
+                <length>1.0</length> <!-- Height of the stalk -->
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse> <!-- Green color for the stalk -->
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose> <!-- Position and orientation of the leaf -->
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size> <!-- Size of the leaf -->
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name> <!-- Base green color -->
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose> <!-- Position of the rust patch -->
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size> <!-- Size of the rust patch -->
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse> <!-- Red color for rust -->
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+      <!-- Maize Plant 1 -->
+      <model name='maize_plant_0_3'>
+        <pose>0 4 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius> <!-- Thickness of the stalk -->
+                <length>1.0</length> <!-- Height of the stalk -->
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse> <!-- Green color for the stalk -->
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose> <!-- Position and orientation of the leaf -->
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size> <!-- Size of the leaf -->
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name> <!-- Base green color -->
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose> <!-- Position of the rust patch -->
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size> <!-- Size of the rust patch -->
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse> <!-- Red color for rust -->
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+
+<!-- Maize Plant 3 -->
+      <model name='maize_plant_1_0'>
+        <pose>1 0 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+<!-- Maize Plant 4 -->
+      <model name='maize_plant_1_2'>
+        <pose>1 1 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+
+    <!-- Maize Plant 4 -->
+      <model name='maize_plant_1_3'>
+        <pose>1 2 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+  
+    <!-- Maize Plant 4 -->
+      <model name='maize_plant_1_3'>
+        <pose>1 3 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+
+    <!-- Maize Plant 4 -->
+      <model name='maize_plant_1_4'>
+        <pose>1 4 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+ 
+
+       
+      <model name='maize_plant_0_7'>
+        <pose>2 0 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius> <!-- Thickness of the stalk -->
+                <length>1.0</length> <!-- Height of the stalk -->
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse> <!-- Green color for the stalk -->
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose> <!-- Position and orientation of the leaf -->
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size> <!-- Size of the leaf -->
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name> <!-- Base green color -->
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose> <!-- Position of the rust patch -->
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size> <!-- Size of the rust patch -->
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse> <!-- Red color for rust -->
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+      <!-- Maize Plant 1 -->
+      <model name='maize_plant_0_8'>
+        <pose>2 1 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius> <!-- Thickness of the stalk -->
+                <length>1.0</length> <!-- Height of the stalk -->
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse> <!-- Green color for the stalk -->
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose> <!-- Position and orientation of the leaf -->
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size> <!-- Size of the leaf -->
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name> <!-- Base green color -->
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose> <!-- Position of the rust patch -->
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size> <!-- Size of the rust patch -->
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse> <!-- Red color for rust -->
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+
+
+<!-- Maize Plant 2 -->
+      <model name='maize_plant_0_6'>
+        <pose>2 2 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+          
+
+      <!-- Maize Plant 1 -->
+      <model name='maize_plant_0_10'>
+        <pose>2 3 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius> <!-- Thickness of the stalk -->
+                <length>1.0</length> <!-- Height of the stalk -->
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse> <!-- Green color for the stalk -->
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose> <!-- Position and orientation of the leaf -->
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size> <!-- Size of the leaf -->
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name> <!-- Base green color -->
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose> <!-- Position of the rust patch -->
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size> <!-- Size of the rust patch -->
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse> <!-- Red color for rust -->
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+      <model name='maize_plant_2_0'>
+        <pose>2 4 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius> <!-- Thickness of the stalk -->
+                <length>1.0</length> <!-- Height of the stalk -->
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse> <!-- Green color for the stalk -->
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose> <!-- Position and orientation of the leaf -->
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size> <!-- Size of the leaf -->
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name> <!-- Base green color -->
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose> <!-- Position of the rust patch -->
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size> <!-- Size of the rust patch -->
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse> <!-- Red color for rust -->
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+
+<!-- Maize Plant 3 -->
+      <model name='maize_plant_3_0'>
+        <pose>3 0 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+
+<!-- Maize Plant 4 -->
+      <model name='maize_plant_3_1'>
+        <pose>3 1 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+   
+
+    <!-- Maize Plant 4 -->
+      <model name='maize_plant_4_1'>
+        <pose>3 2 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+ 
+
+    <!-- Maize Plant 4 -->
+      <model name='maize_plant_5_1'>
+        <pose>3 3 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+  
+
+    <!-- Maize Plant 4 -->
+      <model name='maize_plant_6_1'>
+        <pose>3 4 0.5 0 0 0</pose>
+        <static>true</static>
+        <link name='stalk'>
+          <visual name='stalk_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <diffuse>0 0.5 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='stalk_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>1.0</length>
+              </cylinder>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.01</ixx>
+              <iyy>0.01</iyy>
+              <izz>0.01</izz>
+            </inertia>
+          </inertial>
+        </link>
+        <link name='leaf'>
+          <pose>0 0.1 0.5 0 0 0.5</pose>
+          <visual name='leaf_visual'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Green</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='rust_patch'>
+            <pose>0 0.2 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.01 0.1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>1 0 0 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leaf_collision'>
+            <geometry>
+              <box>
+                <size>0.01 0.5 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <inertial>
+            <mass>0.01</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <iyy>0.001</iyy>
+              <izz>0.001</izz>
+            </inertia>
+          </inertial>
+        </link>
+      </model>
+    </model>
+
+    <!-- Optional: Add more models and elements here -->
+    <!-- Example: A simple box model -->
+    <model name="box_model">
+      <pose>2.5 2.5 0 0 0 0</pose>
+      <link name="box_link">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Ground Plane -->
+    <model name="ground">
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <link name="ground_link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>

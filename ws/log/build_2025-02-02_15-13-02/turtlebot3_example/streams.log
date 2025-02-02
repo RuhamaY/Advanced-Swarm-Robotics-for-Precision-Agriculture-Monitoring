@@ -1,0 +1,64 @@
+[5.924s] Invoking command in '/home/ros/ws/build/turtlebot3_example': PYTHONPATH=/home/ros/ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ros/ws/build/turtlebot3_example/build
+[7.020s] running develop
+[7.675s] Removing /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3-example.egg-link (link to .)
+[7.825s] Invoked command in '/home/ros/ws/build/turtlebot3_example' returned '0': PYTHONPATH=/home/ros/ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ros/ws/build/turtlebot3_example/build
+[7.826s] Invoking command in '/home/ros/ws/src/turtlebot3/turtlebot3_example': PYTHONPATH=/home/ros/ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/ros/ws/build/turtlebot3_example/build install --record /home/ros/ws/build/turtlebot3_example/install.log --single-version-externally-managed install_data --force
+[8.675s] running egg_info
+[8.685s] writing ../../../build/turtlebot3_example/turtlebot3_example.egg-info/PKG-INFO
+[8.687s] writing dependency_links to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/dependency_links.txt
+[8.689s] writing entry points to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/entry_points.txt
+[8.690s] writing requirements to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/requires.txt
+[8.690s] writing top-level names to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/top_level.txt
+[8.714s] reading manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[8.723s] writing manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[8.728s] running build
+[8.728s] running build_py
+[8.730s] running install
+[8.731s] running install_lib
+[8.737s] creating /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example
+[8.738s] creating /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_server
+[8.739s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol_server/turtlebot3_patrol_server.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_server
+[8.741s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol_server/turtlebot3_path.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_server
+[8.741s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol_server/main.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_server
+[8.744s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol_server/__init__.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_server
+[8.744s] creating /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_client
+[8.745s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol_client/turtlebot3_patrol_client.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_client
+[8.746s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol_client/main.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_client
+[8.747s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_patrol_client/__init__.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_client
+[8.748s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/__init__.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example
+[8.748s] creating /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[8.749s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection/turtlebot3_obstacle_detection.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[8.751s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection/main.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[8.753s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_obstacle_detection/__init__.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_obstacle_detection
+[8.754s] creating /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_position_control
+[8.754s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_position_control/turtlebot3_path.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_position_control
+[8.754s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_position_control/main.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_position_control
+[8.756s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_position_control/__init__.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_position_control
+[8.757s] copying /home/ros/ws/build/turtlebot3_example/build/lib/turtlebot3_example/turtlebot3_position_control/turtlebot3_position_control.py -> /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_position_control
+[8.759s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_server/turtlebot3_patrol_server.py to turtlebot3_patrol_server.cpython-310.pyc
+[8.762s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_server/turtlebot3_path.py to turtlebot3_path.cpython-310.pyc
+[8.763s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_server/main.py to main.cpython-310.pyc
+[8.763s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_server/__init__.py to __init__.cpython-310.pyc
+[8.764s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_client/turtlebot3_patrol_client.py to turtlebot3_patrol_client.cpython-310.pyc
+[8.766s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_client/main.py to main.cpython-310.pyc
+[8.767s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_patrol_client/__init__.py to __init__.cpython-310.pyc
+[8.768s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/__init__.py to __init__.cpython-310.pyc
+[8.768s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_obstacle_detection/turtlebot3_obstacle_detection.py to turtlebot3_obstacle_detection.cpython-310.pyc
+[8.770s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_obstacle_detection/main.py to main.cpython-310.pyc
+[8.771s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_obstacle_detection/__init__.py to __init__.cpython-310.pyc
+[8.771s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_position_control/turtlebot3_path.py to turtlebot3_path.cpython-310.pyc
+[8.773s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_position_control/main.py to main.cpython-310.pyc
+[8.774s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_position_control/__init__.py to __init__.cpython-310.pyc
+[8.774s] byte-compiling /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example/turtlebot3_position_control/turtlebot3_position_control.py to turtlebot3_position_control.cpython-310.pyc
+[8.776s] running install_data
+[8.776s] copying resource/turtlebot3_example -> /home/ros/ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[8.781s] copying package.xml -> /home/ros/ws/install/turtlebot3_example/share/turtlebot3_example
+[8.782s] running install_egg_info
+[8.787s] Copying ../../../build/turtlebot3_example/turtlebot3_example.egg-info to /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example-2.1.5-py3.10.egg-info
+[8.794s] running install_scripts
+[8.871s] Installing turtlebot3_obstacle_detection script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.872s] Installing turtlebot3_patrol_client script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.873s] Installing turtlebot3_patrol_server script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.873s] Installing turtlebot3_position_control script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.876s] writing list of installed files to '/home/ros/ws/build/turtlebot3_example/install.log'
+[9.004s] Invoked command in '/home/ros/ws/src/turtlebot3/turtlebot3_example' returned '0': PYTHONPATH=/home/ros/ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/ros/ws/build/turtlebot3_example/build install --record /home/ros/ws/build/turtlebot3_example/install.log --single-version-externally-managed install_data --force

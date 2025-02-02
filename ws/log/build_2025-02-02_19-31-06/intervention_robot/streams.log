@@ -1,0 +1,25 @@
+[7.442s] Invoking command in '/home/ros/ws/src/intervention_robot': PYTHONPATH=/home/ros/ws/build/intervention_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/intervention_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/intervention_robot build --build-base /home/ros/ws/build/intervention_robot/build install --record /home/ros/ws/build/intervention_robot/install.log --single-version-externally-managed install_data
+[8.647s] running egg_info
+[8.653s] writing ../../build/intervention_robot/intervention_robot.egg-info/PKG-INFO
+[8.666s] writing dependency_links to ../../build/intervention_robot/intervention_robot.egg-info/dependency_links.txt
+[8.666s] writing entry points to ../../build/intervention_robot/intervention_robot.egg-info/entry_points.txt
+[8.667s] writing requirements to ../../build/intervention_robot/intervention_robot.egg-info/requires.txt
+[8.667s] writing top-level names to ../../build/intervention_robot/intervention_robot.egg-info/top_level.txt
+[8.668s] reading manifest file '../../build/intervention_robot/intervention_robot.egg-info/SOURCES.txt'
+[8.669s] writing manifest file '../../build/intervention_robot/intervention_robot.egg-info/SOURCES.txt'
+[8.669s] running build
+[8.669s] running build_py
+[8.672s] copying intervention_robot/intervention_robot.py -> /home/ros/ws/build/intervention_robot/build/lib/intervention_robot
+[8.673s] running install
+[8.674s] running install_lib
+[8.675s] copying /home/ros/ws/build/intervention_robot/build/lib/intervention_robot/intervention_robot.py -> /home/ros/ws/install/intervention_robot/lib/python3.10/site-packages/intervention_robot
+[8.679s] byte-compiling /home/ros/ws/install/intervention_robot/lib/python3.10/site-packages/intervention_robot/intervention_robot.py to intervention_robot.cpython-310.pyc
+[8.679s] running install_data
+[8.680s] running install_egg_info
+[8.687s] removing '/home/ros/ws/install/intervention_robot/lib/python3.10/site-packages/intervention_robot-0.0.0-py3.10.egg-info' (and everything under it)
+[8.689s] Copying ../../build/intervention_robot/intervention_robot.egg-info to /home/ros/ws/install/intervention_robot/lib/python3.10/site-packages/intervention_robot-0.0.0-py3.10.egg-info
+[8.690s] running install_scripts
+[8.751s] Installing intervention_robot script to /home/ros/ws/install/intervention_robot/lib/intervention_robot
+[8.752s] Installing rust_detection_node script to /home/ros/ws/install/intervention_robot/lib/intervention_robot
+[8.754s] writing list of installed files to '/home/ros/ws/build/intervention_robot/install.log'
+[8.886s] Invoked command in '/home/ros/ws/src/intervention_robot' returned '0': PYTHONPATH=/home/ros/ws/build/intervention_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/intervention_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/intervention_robot build --build-base /home/ros/ws/build/intervention_robot/build install --record /home/ros/ws/build/intervention_robot/install.log --single-version-externally-managed install_data

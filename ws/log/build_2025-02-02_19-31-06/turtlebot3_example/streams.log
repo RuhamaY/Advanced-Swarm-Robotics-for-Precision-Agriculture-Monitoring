@@ -1,0 +1,24 @@
+[7.477s] Invoking command in '/home/ros/ws/src/turtlebot3/turtlebot3_example': PYTHONPATH=/home/ros/ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/ros/ws/build/turtlebot3_example/build install --record /home/ros/ws/build/turtlebot3_example/install.log --single-version-externally-managed install_data
+[8.539s] running egg_info
+[8.545s] writing ../../../build/turtlebot3_example/turtlebot3_example.egg-info/PKG-INFO
+[8.545s] writing dependency_links to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/dependency_links.txt
+[8.545s] writing entry points to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/entry_points.txt
+[8.545s] writing requirements to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/requires.txt
+[8.546s] writing top-level names to ../../../build/turtlebot3_example/turtlebot3_example.egg-info/top_level.txt
+[8.556s] reading manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[8.557s] writing manifest file '../../../build/turtlebot3_example/turtlebot3_example.egg-info/SOURCES.txt'
+[8.558s] running build
+[8.559s] running build_py
+[8.567s] running install
+[8.568s] running install_lib
+[8.574s] running install_data
+[8.575s] running install_egg_info
+[8.588s] removing '/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example-2.1.5-py3.10.egg-info' (and everything under it)
+[8.589s] Copying ../../../build/turtlebot3_example/turtlebot3_example.egg-info to /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3_example-2.1.5-py3.10.egg-info
+[8.590s] running install_scripts
+[8.701s] Installing turtlebot3_obstacle_detection script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.702s] Installing turtlebot3_patrol_client script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.703s] Installing turtlebot3_patrol_server script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.703s] Installing turtlebot3_position_control script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.703s] writing list of installed files to '/home/ros/ws/build/turtlebot3_example/install.log'
+[8.884s] Invoked command in '/home/ros/ws/src/turtlebot3/turtlebot3_example' returned '0': PYTHONPATH=/home/ros/ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_example build --build-base /home/ros/ws/build/turtlebot3_example/build install --record /home/ros/ws/build/turtlebot3_example/install.log --single-version-externally-managed install_data

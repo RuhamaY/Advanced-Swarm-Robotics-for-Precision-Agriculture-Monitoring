@@ -1,0 +1,46 @@
+[0.059s] Invoking command in '/home/ros/ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3_node
+[0.451s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.452s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.453s] -- Found dynamixel_sdk: 3.7.60 (/opt/ros/humble/share/dynamixel_sdk/cmake)
+[0.453s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.477s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.484s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.497s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.521s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.550s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.614s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[0.696s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.702s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.572s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.235s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.425s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.449s] -- Looking for pthread.h
+[7.748s] -- Looking for pthread.h - found
+[7.749s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.922s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.924s] -- Found Threads: TRUE  
+[7.994s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[8.026s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[8.054s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[8.078s] -- Found tf2: 0.25.11 (/opt/ros/humble/share/tf2/cmake)
+[8.093s] -- Found tf2_ros: 0.25.11 (/opt/ros/humble/share/tf2_ros/cmake)
+[9.776s] [31mCMake Error at CMakeLists.txt:30 (find_package):
+[9.777s]   By not providing "Findturtlebot3_msgs.cmake" in CMAKE_MODULE_PATH this
+[9.777s]   project has asked CMake to find a package configuration file provided by
+[9.777s]   "turtlebot3_msgs", but CMake did not find one.
+[9.777s] 
+[9.777s]   Could not find a package configuration file provided by "turtlebot3_msgs"
+[9.777s]   with any of the following names:
+[9.777s] 
+[9.778s]     turtlebot3_msgsConfig.cmake
+[9.778s]     turtlebot3_msgs-config.cmake
+[9.778s] 
+[9.778s]   Add the installation prefix of "turtlebot3_msgs" to CMAKE_PREFIX_PATH or
+[9.778s]   set "turtlebot3_msgs_DIR" to a directory containing one of the above files.
+[9.778s]   If "turtlebot3_msgs" provides a separate development package or SDK, be
+[9.778s]   sure it has been installed.
+[9.778s] 
+[9.778s] [0m
+[9.778s] -- Configuring incomplete, errors occurred!
+[9.778s] See also "/home/ros/ws/build/turtlebot3_node/CMakeFiles/CMakeOutput.log".
+[9.788s] Invoked command in '/home/ros/ws/build/turtlebot3_node' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3_node

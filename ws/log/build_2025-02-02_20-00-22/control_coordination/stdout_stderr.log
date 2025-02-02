@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/control_coordination/control_coordination.egg-info
+writing ../../build/control_coordination/control_coordination.egg-info/PKG-INFO
+writing dependency_links to ../../build/control_coordination/control_coordination.egg-info/dependency_links.txt
+writing entry points to ../../build/control_coordination/control_coordination.egg-info/entry_points.txt
+writing requirements to ../../build/control_coordination/control_coordination.egg-info/requires.txt
+writing top-level names to ../../build/control_coordination/control_coordination.egg-info/top_level.txt
+writing manifest file '../../build/control_coordination/control_coordination.egg-info/SOURCES.txt'
+reading manifest file '../../build/control_coordination/control_coordination.egg-info/SOURCES.txt'
+writing manifest file '../../build/control_coordination/control_coordination.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ros/ws/build/control_coordination/build
+creating /home/ros/ws/build/control_coordination/build/lib
+creating /home/ros/ws/build/control_coordination/build/lib/control_coordination
+copying control_coordination/__init__.py -> /home/ros/ws/build/control_coordination/build/lib/control_coordination
+copying control_coordination/control_coordination.py -> /home/ros/ws/build/control_coordination/build/lib/control_coordination
+running install
+running install_lib
+creating /home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination
+copying /home/ros/ws/build/control_coordination/build/lib/control_coordination/__init__.py -> /home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination
+copying /home/ros/ws/build/control_coordination/build/lib/control_coordination/control_coordination.py -> /home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination
+byte-compiling /home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination/control_coordination.py to control_coordination.cpython-310.pyc
+running install_data
+creating /home/ros/ws/install/control_coordination/share/ament_index
+creating /home/ros/ws/install/control_coordination/share/ament_index/resource_index
+creating /home/ros/ws/install/control_coordination/share/ament_index/resource_index/packages
+copying resource/control_coordination -> /home/ros/ws/install/control_coordination/share/ament_index/resource_index/packages
+copying package.xml -> /home/ros/ws/install/control_coordination/share/control_coordination
+running install_egg_info
+Copying ../../build/control_coordination/control_coordination.egg-info to /home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination-0.0.0-py3.10.egg-info
+running install_scripts
+Installing control_coordination script to /home/ros/ws/install/control_coordination/lib/control_coordination
+writing list of installed files to '/home/ros/ws/build/control_coordination/install.log'

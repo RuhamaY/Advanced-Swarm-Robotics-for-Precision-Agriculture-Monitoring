@@ -1,0 +1,28 @@
+[1.508s] Invoking command in '/home/ros/ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/detection_robot:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ros/ws/build/turtlebot3_navigation2 -- -j8 -l8
+[5.285s] Invoked command in '/home/ros/ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/detection_robot:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ros/ws/build/turtlebot3_navigation2 -- -j8 -l8
+[5.286s] Invoking command in '/home/ros/ws/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/detection_robot:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/ros/ws/build/turtlebot3_navigation2
+[5.443s] -- Install configuration: ""
+[5.443s] -- Execute custom install script
+[5.443s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch/navigation2.launch.py
+[5.443s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map.pgm
+[5.444s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map.yaml
+[5.444s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger.yaml
+[5.444s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle.yaml
+[5.444s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle_pi.yaml
+[5.444s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+[5.445s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/ament_index/resource_index/package_run_dependencies/turtlebot3_navigation2
+[5.445s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/ament_index/resource_index/parent_prefix_path/turtlebot3_navigation2
+[5.445s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.sh
+[5.445s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.dsv
+[5.446s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.sh
+[5.446s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.dsv
+[5.447s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.bash
+[5.447s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.sh
+[5.447s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.zsh
+[5.448s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.dsv
+[5.448s] -- Symlinking: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv
+[5.449s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/ament_index/resource_index/packages/turtlebot3_navigation2
+[5.449s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config.cmake
+[5.449s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config-version.cmake
+[5.450s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.xml
+[5.567s] Invoked command in '/home/ros/ws/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/detection_robot:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/ros/ws/build/turtlebot3_navigation2

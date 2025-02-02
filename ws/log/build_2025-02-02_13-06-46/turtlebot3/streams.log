@@ -1,0 +1,39 @@
+[0.551s] Invoking command in '/home/ros/ws/build/turtlebot3': AMENT_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_example:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:/opt/ros/humble PYTHONPATH=/home/ros/ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3 -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3
+[0.715s] -- The C compiler identification is GNU 11.4.0
+[1.405s] -- The CXX compiler identification is GNU 11.4.0
+[1.917s] -- Detecting C compiler ABI info
+[2.131s] -- Detecting C compiler ABI info - done
+[2.143s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.144s] -- Detecting C compile features
+[2.144s] -- Detecting C compile features - done
+[2.148s] -- Detecting CXX compiler ABI info
+[2.362s] -- Detecting CXX compiler ABI info - done
+[2.370s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.371s] -- Detecting CXX compile features
+[2.371s] -- Detecting CXX compile features - done
+[2.374s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.573s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.754s] -- Configuring done
+[2.758s] -- Generating done
+[2.759s] -- Build files have been written to: /home/ros/ws/build/turtlebot3
+[2.766s] Invoked command in '/home/ros/ws/build/turtlebot3' returned '0': AMENT_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_example:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:/opt/ros/humble PYTHONPATH=/home/ros/ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3 -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3
+[2.766s] Invoking command in '/home/ros/ws/build/turtlebot3': AMENT_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_example:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:/opt/ros/humble PYTHONPATH=/home/ros/ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/ws/build/turtlebot3 -- -j8 -l8
+[2.808s] Invoked command in '/home/ros/ws/build/turtlebot3' returned '0': AMENT_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_example:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:/opt/ros/humble PYTHONPATH=/home/ros/ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ros/ws/build/turtlebot3 -- -j8 -l8
+[2.812s] Invoking command in '/home/ros/ws/build/turtlebot3': AMENT_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_example:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:/opt/ros/humble PYTHONPATH=/home/ros/ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/ws/build/turtlebot3
+[2.823s] -- Install configuration: ""
+[2.824s] -- Installing: /home/ros/ws/install/turtlebot3/share/ament_index/resource_index/package_run_dependencies/turtlebot3
+[2.825s] -- Installing: /home/ros/ws/install/turtlebot3/share/ament_index/resource_index/parent_prefix_path/turtlebot3
+[2.825s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.sh
+[2.825s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.dsv
+[2.826s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/environment/path.sh
+[2.826s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/environment/path.dsv
+[2.826s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/local_setup.bash
+[2.827s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/local_setup.sh
+[2.827s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/local_setup.zsh
+[2.827s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/local_setup.dsv
+[2.827s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/package.dsv
+[2.828s] -- Installing: /home/ros/ws/install/turtlebot3/share/ament_index/resource_index/packages/turtlebot3
+[2.828s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config.cmake
+[2.828s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config-version.cmake
+[2.828s] -- Installing: /home/ros/ws/install/turtlebot3/share/turtlebot3/package.xml
+[2.832s] Invoked command in '/home/ros/ws/build/turtlebot3' returned '0': AMENT_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_example:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ws/install/turtlebot3_bringup:/home/ros/ws/install/turtlebot3_node:/home/ros/ws/install/turtlebot3_navigation2:/home/ros/ws/install/turtlebot3_description:/home/ros/ws/install/turtlebot3_cartographer:/opt/ros/humble PYTHONPATH=/home/ros/ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ros/ws/build/turtlebot3

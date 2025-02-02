@@ -1,0 +1,54 @@
+[0.146s] Invoking command in '/home/ros/ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3_node
+[3.798s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.798s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.799s] -- Found dynamixel_sdk: 3.7.60 (/opt/ros/humble/share/dynamixel_sdk/cmake)
+[3.799s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.799s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.800s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.800s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.800s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.800s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.801s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[3.801s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.801s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[20.200s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[20.344s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[20.418s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[20.487s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[20.532s] -- Found tf2: 0.25.11 (/opt/ros/humble/share/tf2/cmake)
+[20.548s] -- Found tf2_ros: 0.25.11 (/opt/ros/humble/share/tf2_ros/cmake)
+[20.809s] -- Found turtlebot3_msgs: 2.2.3 (/opt/ros/humble/share/turtlebot3_msgs/cmake)
+[21.134s] -- Configuring done
+[21.211s] -- Generating done
+[21.249s] -- Build files have been written to: /home/ros/ws/build/turtlebot3_node
+[21.299s] Invoked command in '/home/ros/ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3_node
+[21.301s] Invoking command in '/home/ros/ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/ws/build/turtlebot3_node -- -j8 -l8
+[21.433s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_node_lib[0m
+[21.547s] [ 85%] Built target turtlebot3_node_lib
+[21.576s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_ros[0m
+[21.625s] [100%] Built target turtlebot3_ros
+[21.650s] Invoked command in '/home/ros/ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/ws/build/turtlebot3_node -- -j8 -l8
+[21.655s] Invoking command in '/home/ros/ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/ws/build/turtlebot3_node
+[21.673s] -- Install configuration: ""
+[21.674s] -- Execute custom install script
+[21.675s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/param/burger.yaml
+[21.677s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle.yaml
+[21.678s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle_pi.yaml
+[21.678s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros
+[21.679s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_node
+[21.679s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_node
+[21.679s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.sh
+[21.680s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.dsv
+[21.680s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.sh
+[21.680s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.dsv
+[21.681s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.bash
+[21.681s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.sh
+[21.682s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.zsh
+[21.684s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.dsv
+[21.684s] -- Symlinking: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/package.dsv
+[21.709s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/ament_index/resource_index/packages/turtlebot3_node
+[21.709s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[21.710s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig.cmake
+[21.711s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig-version.cmake
+[21.711s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_node/share/turtlebot3_node/package.xml
+[21.730s] Invoked command in '/home/ros/ws/build/turtlebot3_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/ws/build/turtlebot3_node

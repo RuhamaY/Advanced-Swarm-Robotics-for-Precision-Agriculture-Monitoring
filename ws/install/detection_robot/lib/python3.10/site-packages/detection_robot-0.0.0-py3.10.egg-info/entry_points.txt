@@ -1,0 +1,3 @@
+[console_scripts]
+detection_robot = detection_robot.detection_robot:main
+

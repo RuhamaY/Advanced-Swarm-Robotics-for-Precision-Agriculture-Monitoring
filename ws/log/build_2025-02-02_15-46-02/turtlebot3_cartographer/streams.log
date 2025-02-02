@@ -1,0 +1,32 @@
+[0.188s] Invoking command in '/home/ros/ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3_cartographer
+[3.689s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.689s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.692s] -- Configuring done
+[3.694s] -- Generating done
+[3.694s] -- Build files have been written to: /home/ros/ws/build/turtlebot3_cartographer
+[3.725s] Invoked command in '/home/ros/ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3_cartographer
+[3.735s] Invoking command in '/home/ros/ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ros/ws/build/turtlebot3_cartographer -- -j8 -l8
+[3.887s] Invoked command in '/home/ros/ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ros/ws/build/turtlebot3_cartographer -- -j8 -l8
+[3.924s] Invoking command in '/home/ros/ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/ros/ws/build/turtlebot3_cartographer
+[3.945s] -- Install configuration: ""
+[3.946s] -- Execute custom install script
+[3.946s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+[3.948s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/cartographer.launch.py
+[3.949s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py
+[3.952s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz
+[3.952s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer
+[3.952s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer
+[3.953s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.sh
+[3.953s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.dsv
+[3.955s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.sh
+[3.955s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.dsv
+[3.956s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.bash
+[3.956s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.sh
+[3.957s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.zsh
+[3.958s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.dsv
+[3.959s] -- Symlinking: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv
+[4.033s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/ament_index/resource_index/packages/turtlebot3_cartographer
+[4.035s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake
+[4.036s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake
+[4.036s] -- Up-to-date symlink: /home/ros/ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.xml
+[4.047s] Invoked command in '/home/ros/ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/ws/install/turtlebot3_teleop:/home/ros/ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/ros/ws/build/turtlebot3_cartographer

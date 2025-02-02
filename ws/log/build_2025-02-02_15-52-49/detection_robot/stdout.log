@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/detection_robot/detection_robot.egg-info/PKG-INFO
+writing dependency_links to ../../build/detection_robot/detection_robot.egg-info/dependency_links.txt
+writing entry points to ../../build/detection_robot/detection_robot.egg-info/entry_points.txt
+writing requirements to ../../build/detection_robot/detection_robot.egg-info/requires.txt
+writing top-level names to ../../build/detection_robot/detection_robot.egg-info/top_level.txt
+reading manifest file '../../build/detection_robot/detection_robot.egg-info/SOURCES.txt'
+writing manifest file '../../build/detection_robot/detection_robot.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+creating /home/ros/ws/install/detection_robot/share/detection_robot/msg
+copying detection_robot/msg/PlantHealth.msg -> /home/ros/ws/install/detection_robot/share/detection_robot/msg
+running install_egg_info
+removing '/home/ros/ws/install/detection_robot/lib/python3.10/site-packages/detection_robot-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/detection_robot/detection_robot.egg-info to /home/ros/ws/install/detection_robot/lib/python3.10/site-packages/detection_robot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing detection_robot script to /home/ros/ws/install/detection_robot/lib/detection_robot
+writing list of installed files to '/home/ros/ws/build/detection_robot/install.log'

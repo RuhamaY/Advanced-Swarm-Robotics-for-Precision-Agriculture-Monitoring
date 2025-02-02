@@ -1,0 +1,4 @@
+[console_scripts]
+intervention_robot = intervention_robot.intervention_robot:main
+rust_detection_node = rust_detection.rust_detection_node:main
+

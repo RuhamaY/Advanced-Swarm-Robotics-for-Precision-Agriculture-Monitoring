@@ -1,0 +1,32 @@
+<launch>
+    <!-- World definition -->
+    <arg name="world_name" default="ros/home/ws/worlds/wheat_field.world"/>
+    <param name="use_sim_time" value="true"/>
+
+    <!-- Gazebo server and client nodes -->
+    <node pkg="gazebo_ros" type="gzserver" name="gazebo_server">
+        <param name="world_name" value="$(arg world_name)"/>
+    </node>
+
+    <node pkg="gazebo_ros" type="gzclient" name="gazebo_client"/>
+
+    <!-- Detector robots -->
+    <node pkg="detection_robot" exec="detection_robot.py" name="detector_1">
+        <param name="robot_name" value="detector_1"/>
+    </node>
+    <node pkg="detection_robot" exec="detection_robot.py" name="detector_2">
+        <param name="robot_name" value="detector_2"/>
+    </node>
+
+    <!-- Intervention robots -->
+    <node pkg="intervention_robot" exec="intervention_robot.py" name="intervention_1">
+        <param name="robot_name" value="intervention_1"/>
+    </node>
+    <node pkg="intervention_robot" exec="intervention_robot.py" name="intervention_2">
+        <param name="robot_name" value="intervention_2"/>
+    </node>
+
+    <!-- Central coordination node -->
+    <node pkg="control_coordination" exec="central_coordination.py" name="central_coordination"/>
+</launch>
+

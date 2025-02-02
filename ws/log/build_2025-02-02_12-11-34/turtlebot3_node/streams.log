@@ -1,0 +1,36 @@
+[0.033s] Invoking command in '/home/ros/ws/build/turtlebot3_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3_node
+[0.293s] -- The C compiler identification is GNU 11.4.0
+[0.815s] -- The CXX compiler identification is GNU 11.4.0
+[1.156s] -- Detecting C compiler ABI info
+[1.332s] -- Detecting C compiler ABI info - done
+[1.347s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.348s] -- Detecting C compile features
+[1.348s] -- Detecting C compile features - done
+[1.353s] -- Detecting CXX compiler ABI info
+[1.515s] -- Detecting CXX compiler ABI info - done
+[1.523s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.524s] -- Detecting CXX compile features
+[1.524s] -- Detecting CXX compile features - done
+[1.526s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.725s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.817s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.973s] [31mCMake Error at CMakeLists.txt:19 (find_package):
+[2.973s]   By not providing "Finddynamixel_sdk.cmake" in CMAKE_MODULE_PATH this
+[2.974s]   project has asked CMake to find a package configuration file provided by
+[2.974s]   "dynamixel_sdk", but CMake did not find one.
+[2.974s] 
+[2.974s]   Could not find a package configuration file provided by "dynamixel_sdk"
+[2.974s]   with any of the following names:
+[2.974s] 
+[2.974s]     dynamixel_sdkConfig.cmake
+[2.974s]     dynamixel_sdk-config.cmake
+[2.974s] 
+[2.974s]   Add the installation prefix of "dynamixel_sdk" to CMAKE_PREFIX_PATH or set
+[2.974s]   "dynamixel_sdk_DIR" to a directory containing one of the above files.  If
+[2.974s]   "dynamixel_sdk" provides a separate development package or SDK, be sure it
+[2.974s]   has been installed.
+[2.974s] 
+[2.975s] [0m
+[2.975s] -- Configuring incomplete, errors occurred!
+[2.975s] See also "/home/ros/ws/build/turtlebot3_node/CMakeFiles/CMakeOutput.log".
+[2.978s] Invoked command in '/home/ros/ws/build/turtlebot3_node' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/ws/src/turtlebot3/turtlebot3_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/ws/install/turtlebot3_node

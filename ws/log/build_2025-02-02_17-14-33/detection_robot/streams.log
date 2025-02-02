@@ -1,0 +1,21 @@
+[5.434s] Invoking command in '/home/ros/ws/src/detection_robot': PYTHONPATH=/home/ros/ws/build/detection_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/detection_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/detection_robot build --build-base /home/ros/ws/build/detection_robot/build install --record /home/ros/ws/build/detection_robot/install.log --single-version-externally-managed install_data
+[6.500s] running egg_info
+[6.502s] writing ../../build/detection_robot/detection_robot.egg-info/PKG-INFO
+[6.504s] writing dependency_links to ../../build/detection_robot/detection_robot.egg-info/dependency_links.txt
+[6.505s] writing entry points to ../../build/detection_robot/detection_robot.egg-info/entry_points.txt
+[6.506s] writing requirements to ../../build/detection_robot/detection_robot.egg-info/requires.txt
+[6.509s] writing top-level names to ../../build/detection_robot/detection_robot.egg-info/top_level.txt
+[6.516s] reading manifest file '../../build/detection_robot/detection_robot.egg-info/SOURCES.txt'
+[6.518s] writing manifest file '../../build/detection_robot/detection_robot.egg-info/SOURCES.txt'
+[6.518s] running build
+[6.519s] running build_py
+[6.519s] running install
+[6.521s] running install_lib
+[6.524s] running install_data
+[6.524s] running install_egg_info
+[6.530s] removing '/home/ros/ws/install/detection_robot/lib/python3.10/site-packages/detection_robot-0.0.0-py3.10.egg-info' (and everything under it)
+[6.532s] Copying ../../build/detection_robot/detection_robot.egg-info to /home/ros/ws/install/detection_robot/lib/python3.10/site-packages/detection_robot-0.0.0-py3.10.egg-info
+[6.548s] running install_scripts
+[6.633s] Installing detection_robot script to /home/ros/ws/install/detection_robot/lib/detection_robot
+[6.633s] writing list of installed files to '/home/ros/ws/build/detection_robot/install.log'
+[6.742s] Invoked command in '/home/ros/ws/src/detection_robot' returned '0': PYTHONPATH=/home/ros/ws/build/detection_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/detection_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/detection_robot build --build-base /home/ros/ws/build/detection_robot/build install --record /home/ros/ws/build/detection_robot/install.log --single-version-externally-managed install_data

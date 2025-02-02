@@ -1,0 +1,22 @@
+[6.251s] Invoking command in '/home/ros/ws/build/turtlebot3_example': PYTHONPATH=/home/ros/ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/ws/build/turtlebot3_example/build --no-deps symlink_data --force
+[7.549s] running develop
+[8.386s] running egg_info
+[8.386s] writing turtlebot3_example.egg-info/PKG-INFO
+[8.387s] writing dependency_links to turtlebot3_example.egg-info/dependency_links.txt
+[8.388s] writing entry points to turtlebot3_example.egg-info/entry_points.txt
+[8.389s] writing requirements to turtlebot3_example.egg-info/requires.txt
+[8.389s] writing top-level names to turtlebot3_example.egg-info/top_level.txt
+[8.400s] reading manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[8.402s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[8.407s] running build_ext
+[8.408s] Creating /home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3-example.egg-link (link to .)
+[8.411s] Installing turtlebot3_obstacle_detection script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.412s] Installing turtlebot3_patrol_client script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.413s] Installing turtlebot3_patrol_server script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.414s] Installing turtlebot3_position_control script to /home/ros/ws/install/turtlebot3_example/lib/turtlebot3_example
+[8.416s] 
+[8.416s] Installed /home/ros/ws/build/turtlebot3_example
+[8.417s] running symlink_data
+[8.418s] symbolically linking /home/ros/ws/build/turtlebot3_example/resource/turtlebot3_example -> /home/ros/ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[8.420s] symbolically linking /home/ros/ws/build/turtlebot3_example/package.xml -> /home/ros/ws/install/turtlebot3_example/share/turtlebot3_example
+[8.608s] Invoked command in '/home/ros/ws/build/turtlebot3_example' returned '0': PYTHONPATH=/home/ros/ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ros/ws/build/turtlebot3_example/build --no-deps symlink_data --force

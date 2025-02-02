@@ -1,0 +1,24 @@
+[1.748s] Invoking command in '/home/ros/ws/src/control_coordination': PYTHONPATH=/home/ros/ws/build/control_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/control_coordination/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control_coordination build --build-base /home/ros/ws/build/control_coordination/build install --record /home/ros/ws/build/control_coordination/install.log --single-version-externally-managed install_data
+[2.144s] running egg_info
+[2.145s] writing ../../build/control_coordination/control_coordination.egg-info/PKG-INFO
+[2.145s] writing dependency_links to ../../build/control_coordination/control_coordination.egg-info/dependency_links.txt
+[2.146s] writing entry points to ../../build/control_coordination/control_coordination.egg-info/entry_points.txt
+[2.146s] writing requirements to ../../build/control_coordination/control_coordination.egg-info/requires.txt
+[2.147s] writing top-level names to ../../build/control_coordination/control_coordination.egg-info/top_level.txt
+[2.151s] reading manifest file '../../build/control_coordination/control_coordination.egg-info/SOURCES.txt'
+[2.152s] writing manifest file '../../build/control_coordination/control_coordination.egg-info/SOURCES.txt'
+[2.152s] running build
+[2.153s] running build_py
+[2.153s] copying control_coordination/control_coordination.py -> /home/ros/ws/build/control_coordination/build/lib/control_coordination
+[2.153s] running install
+[2.155s] running install_lib
+[2.155s] copying /home/ros/ws/build/control_coordination/build/lib/control_coordination/control_coordination.py -> /home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination
+[2.158s] byte-compiling /home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination/control_coordination.py to control_coordination.cpython-310.pyc
+[2.158s] running install_data
+[2.158s] running install_egg_info
+[2.161s] removing '/home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination-0.0.0-py3.10.egg-info' (and everything under it)
+[2.161s] Copying ../../build/control_coordination/control_coordination.egg-info to /home/ros/ws/install/control_coordination/lib/python3.10/site-packages/control_coordination-0.0.0-py3.10.egg-info
+[2.164s] running install_scripts
+[2.202s] Installing control_coordination script to /home/ros/ws/install/control_coordination/lib/control_coordination
+[2.203s] writing list of installed files to '/home/ros/ws/build/control_coordination/install.log'
+[2.270s] Invoked command in '/home/ros/ws/src/control_coordination' returned '0': PYTHONPATH=/home/ros/ws/build/control_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ws/install/control_coordination/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control_coordination build --build-base /home/ros/ws/build/control_coordination/build install --record /home/ros/ws/build/control_coordination/install.log --single-version-externally-managed install_data
