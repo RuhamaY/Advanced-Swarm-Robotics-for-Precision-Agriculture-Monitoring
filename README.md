@@ -38,6 +38,28 @@ This project focuses on utilizing **swarm robotics** to enhance precision agricu
 - **Communication:** ROS 2 topics for inter-robot data exchange.
 - **Task Coordination:** Real-time decision-making and collision management.
 
+## Running the Simulation
+
+After sourcing your ROS 2 environment and downloading the necessary packages, you can run the simulation with the following command:
+
+```bash
+ros2 launch control_coordination general_launch.py
+```
+
+This command will launch the simulation environment in Gazebo, initializing all swarm robots for wheat rust detection, data analysis, and targeted intervention.
+
+Make sure you have:
+
+1. Installed all required dependencies.  
+2. Sourced the ROS 2 environment:
+
+   ```bash
+   source /opt/ros/<distro>/setup.bash
+   source install/setup.bash
+   ```
+
+   Replace `<distro>` with your ROS 2 distribution (e.g., `foxy`, `galactic`).
+
 ## Expected Outcomes
 
 - High-accuracy wheat rust detection.
