@@ -29,7 +29,6 @@ This project focuses on utilizing **swarm robotics** to enhance precision agricu
 - Built in **Gazebo** with:
   - A virtual wheat field featuring different infestation zones.
   - Color-coded indicators to represent varying rust severity levels.
-  - Integrated wheat rust detection models for realistic testing scenarios.
 
 ![World overview](image.png)
 
