@@ -31,6 +31,8 @@ This project focuses on utilizing **swarm robotics** to enhance precision agricu
   - Color-coded indicators to represent varying rust severity levels.
   - Integrated wheat rust detection models for realistic testing scenarios.
 
+![World overview](image.png)
+
 ## ROS 2 Integration
 
 - **Navigation:** `nav2` for path planning and obstacle avoidance.
