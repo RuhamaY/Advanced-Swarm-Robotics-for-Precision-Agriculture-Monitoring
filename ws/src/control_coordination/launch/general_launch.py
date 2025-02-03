@@ -5,7 +5,7 @@ from launch.actions import DeclareLaunchArgument
 def generate_launch_description():
     return LaunchDescription([
         # Declare the 'world' argument for the Gazebo world file
-        DeclareLaunchArgument('world', default_value='/home/ros/ws/worlds/wheat_field.world', description='Path to the Gazebo world file'),
+        DeclareLaunchArgument('world', default_value='/home/ros/ws/world/wheat_field.world', description='Path to the Gazebo world file'),
         
         # Launch Gazebo server
         Node(
